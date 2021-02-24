@@ -1,3 +1,4 @@
+# Hello World
 class VideogamesController < ApplicationController
   def index
     @videogames = Videogame.all
