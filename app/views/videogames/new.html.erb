@@ -1,0 +1,11 @@
+<h1> Add a new videogame! </h1>
+
+<%= form_for @videogame  do |form_helper|%>
+    <%= form_helper.label :name %>
+    <%= form_helper.text_field :name %><br/>
+    <%= form_helper.label :year %>
+    <%= form_helper.number_field :year %><br/>
+    <%= form_helper.label :description %>
+    <%= form_helper.text_field :description %><br/>
+    <%= form_helper.submit "Done!" %>
+<% end %>

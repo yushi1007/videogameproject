@@ -1,0 +1,12 @@
+<h1>List Of Videogames</h1>
+<p>Here are the current list of videogames:</p>
+
+<div>
+
+<% @videogames.each do |vg| %>
+  <div><%= link_to vg.to_s, videogame_path(vg) %></div>
+<% end %>
+
+</div>
+
+<%= button_to "Create a new entry", create(), :method => :get%>

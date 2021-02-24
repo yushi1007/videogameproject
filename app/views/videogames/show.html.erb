@@ -1,0 +1,9 @@
+<h1><%= @videogame.to_s%></h1>
+<p>Here's the game information:</p>
+
+<h2><%= @videogame.description%></h2>
+<h3><%= @videogame.year%></h3>
+
+  <%= button_to "Delete this game", @videogame, :method => :delete%>
+  <%= button_to "Edit this game", edit_videogame_path(@videogame), :method => :get %>
+  <%= button_to "Go back", videogames_path(), :method => :get %>
